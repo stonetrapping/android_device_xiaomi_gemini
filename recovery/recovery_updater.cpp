@@ -198,6 +198,6 @@ Value * VerifyModemFn(const char *name, State *state, int argc, Expr *argv[]) {
     return StringValue(strdup(ret ? "1" : "0"));
 }
 
-void Register_librecovery_updater_gemini() {
-    RegisterFunction("gemini.verify_modem", VerifyModemFn);
+void Register_librecovery_updater_scorpio() {
+    RegisterFunction("scorpio.verify_modem", VerifyModemFn);
 }
